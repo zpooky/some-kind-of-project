@@ -31,7 +31,7 @@
 \maketitle
 
 \begin{abstract}
-
+Abstract
 \end{abstract}
 
 \section{Introduction}
@@ -47,6 +47,11 @@ Our methods consist of two parts:
  \item Interviews/Surveys - Based on the result from the literature review, a survey will be created where we will try to confirm if our found issues are also experienced by the developers. If so, do they have a possible solution of their own and if not, how are the issues handled.
 \end{enumerate}
 The result of this paper will hopefully provide a guideline to developers that are new to integration with ESB. A resource that will help them get past the most common issues and give them a quicker start with development.
+
+\newpage
+\setcounter{tocdepth}{3}
+\tableofcontents
+\newpage
 
 \section{Background}
 A lot of companies have an increasing need to integrate different software to create systems that is able to automatically handle large parts of business logic. Systems that are integrated with each other can save both time and money, as they can cut out time consuming, manual handling of data transfer.
@@ -314,11 +319,16 @@ RQ1 - The following issues can occur when implementing an ESB architecture solut
 \item[2.2] This should not be an issue as the ESB only performs actions that would need to be done by the individual nodes if the ESB wasn’t there to sort it out. As long as the ESB only does what it needs to do, all nodes should get what it needs, when it needs it. Any bottlenecks is most likely to be found in connection or slow servers.
 \item[2.3] This issue can’t be either confirmed or dismissed. as we could not find any participant that had enough experience in integration to give any directions on the matter.
 \item[2.4] This is absolutely confirmed and a solution is not easy to give. The survey-takers that are involved in our project are quite privileged. Since they are involved in a project tied to Ericsson (a company that have a huge influence on the industry, they got an easy access to first class assistance from the developers of the Mule ESB. Otherwise it is confirmed that support and community response is hard to get by and since our survey-takers have been privileged enough, we can confirm that support is an area where vast improvements are needed. 
-\item[2.1]
-\item[2.1]
 \end{description}
 
-% -------------------------------------------------insert here
+\begin{description}
+\item[2.1] No solution is provided. Hower, we believe that this issue can be handled by the fact that you know that it exists. If a project is to be started and the project manager knows about the issues that may occur, education can be started at an early stage, preventing slow progress on implementation
+\item[2.2] This, as far as we have found out, had been handled by trial and error. Unfortunately this is the best answer to this issue at the moment. A more stable solution is to choose a version of a ESB and stick to it, ignoring possible improvements in order to keep the functionality already implemented.
+\item[2.3] This is still an issue and will keep in being an issue. Until the different providers of ESB solutions sit down and decide on a common standard for a minimum of functionality, there is no way of deciding on what needs to be there to be able to say that you’ve got a ESB integrated system.
+\item[2.4] This is an issue that can quite easily be handled. Several different session ids can be stored in the ESB in order to keep connection with all the nodes. Another solution is to make the ESB perform a login and logout on each node, every time  a request is made.
+\item[2.5] There are some xml editors with a GUI editor. These are not free from bugs, but combined with other tools they can provide an easier overview in the development process.
+\item[2.6] This can be addressed in two ways. 1. Hope for the best. Meaning that the development relies on community and available documentation, with no additional economical cost for the project. 2. Purchase of enterprise license. Meaning a economical cost, but guarantees more documentation and support in the process. The first alternative would be advised for teams with experience of the platform and vice verca.
+\end{description}
 
 \end{description}
 
@@ -328,8 +338,7 @@ The issues that were not provided with a solution, at least comes with direction
 
 Previously available information fails to give a concluded image on ESB integration and issue handling, with this thesis all the pieces should be incorporated so that an informed plan can be established.
 
-
-\bibliographystyle{plain} 
+\bibliographystyle{plain}
 \bibliography{references}
 
 \newpage
@@ -338,4 +347,3 @@ Previously available information fails to give a concluded image on ESB integrat
 \section{Data from Literature Review}
 
 \end{document}
-
