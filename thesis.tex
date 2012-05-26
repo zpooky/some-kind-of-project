@@ -35,6 +35,14 @@ Abstract
 \end{abstract}
 
 \section{Introduction}
+A lot of companies have an increasing need to integrate different software to create systems that is able to automatically handle large parts of business logic. Systems that are integrated with each other can save both time and money, as they can cut out time consuming, manual handling of data transfer.
+
+The current de facto standard for software integration is called Enterprise Service Bus (ESB). The ESB handles all communication between different individual systems (nodes) that are to be integrated in the finished system.
+
+The ESB needs to be able to provide different interfaces for nodes to communicate and also needs the capability to transform data so that all nodes receives data that it can understand and work with.
+
+But how easy is it to start up with integration using an ESB?
+
 The goal of this paper is to find a majority of all the known issues with software integration with Enterprise Service Bus (ESB), and also try to find solutions to these issues.
 
 The purpose is to make integration with ESB easier by pinpointing the available solutions to known issues and if no solutions are available, try to find our own methods to deal with problems.
@@ -54,11 +62,24 @@ The result of this paper will hopefully provide a guideline to developers that a
 \newpage
 
 \section{Background}
-A lot of companies have an increasing need to integrate different software to create systems that is able to automatically handle large parts of business logic. Systems that are integrated with each other can save both time and money, as they can cut out time consuming, manual handling of data transfer.
-
-The current de facto standard for software integration is called Enterprise Service Bus (ESB). The ESB handles all communication between different individual systems (nodes) that are to be integrated in the finished system.
-
-The ESB needs to be able to provide different interfaces for nodes to communicate and also needs the capability to transform data so that all nodes receives data that it can understand and work with.
+In this section we will provide the background knowledge that can be usefull to be able to understand what we are really talking about.
+The techniques and terms explained are:
+\begin{itemize}
+\item Point-to-Point Integration
+\item Hub-and-Spoke Integration
+\item Enterprise Servise Bus (ESB)
+\item Service Oriented Architecture (SOA)
+\item Simple Object Access Protocol (SOAP)
+\item Web Services Description Language (WSDL)
+\item Universal Descriptionm Discovery and Integration (UDDI)
+\item Representational State Transfer (REST)
+\item Client-server
+\item Stateless
+\item Cache
+\item Uniform interface
+\item Layered system
+\item Code-on-demand
+\end{itemize}
 
 \label{sec:background}
 
