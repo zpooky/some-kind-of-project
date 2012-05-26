@@ -1,4 +1,4 @@
-% Bachelor Thesis, 2011
+% Bachelor Thesis, 2012
 % Software Engineering at Blekinge Institute of Technology
 % 
 %
@@ -24,7 +24,7 @@
 	\email{toppsen@gmail.com}, \email{spooky.bender@gmail.com}
 }
 
-\hyphenation{VCS VCSes foo-bar-baz}
+\hyphenation{ESB foo-bar-baz}
 
 \begin{document}
 
@@ -182,10 +182,10 @@ We will conduct interviews with participants in our development team that are cu
 \item Confirm that the known issues from the literature review is also present in the projects we are involved in. If this is not the case, show how is the particular issue handled.
 \item See if there are other issues that we have not found in previous research papers. We will also try to get the participants to try to think of possible solutions.
 \end{enumerate}
-Our goal is to have a range between six to eight participants in this survey with varying experience in ESB Integration. We initially try to get as many professional ESB Integrators as possible then if they are not enough we will ask participants from our software project who has experience in ESB integration. The reason we decided on the number of participants was because of the limited time we had we thought it reasonable with that range of people. The challenge was to find people we the experience who also had time to spare to answer our questionnaire. 
+Our goal is to have a range between six to eight participants in this survey with varying experience in ESB Integration. We initially try to get as many professional ESB Integrators as possible then if they are not enough we will ask participants from our software project who has experience in ESB integration. The reason we decided on the number of participants was because of the limited time we had we thought it reasonable with that range of people. The challenge was to find people with the experience who also had time to spare to answer our questionnaire. 
 
 The survey will contain the following questions and might be followed up by additional questions:
-
+\label{survey}
 \begin{itemize}
 
 \item Do you have any experience with software integrating using an ESB?
@@ -256,8 +256,8 @@ We thought that we would find more issues in this field and there is a slight po
 \section{Data collecting results}
 
 \subsection{Survey setup}
-Our survey was filled in by seven individuals, all in some way connected to our current project at Ericsson. We chose the participants based on their previous knowledge of system integration. Both with ESB and other techniques. Four of the participants is actually in our group and is therefore currently working actively with integration using a ESB from Mulesoft. The other three are workers at Ericsson, which we have got in contact with while performing our project.
-The surveys was conducted by handing the participant a printed survey with our previously stated questions. After this, the person had all the time he or she needed to fill in their answers.
+Our survey was filled in by seven individuals, all in some way connected to our current project at Ericsson. We chose the participants based on their previous knowledge of system integration. Both with ESB and other techniques. Four of the participants are actually in our group and is therefore currently working actively with integration using an ESB from Mulesoft. The other three are employed at Ericsson, which we got in contact with during our project there.
+The survey was conducted by handing the participant a printed form with our previously stated questions in section \ref{survey}. After this, the person had all the time he or she needed to fill in their answers.
 All the participants had one of us present at all time in case something was unclear, badly formulated or in case they just wanted to say something that was not covered by the survey.
 
 \subsection{Collected data}
@@ -291,7 +291,6 @@ We found possible solutions to the majority of the known issues we found, these 
 From the survey we also got some additional issues concerning ESB integration that was not found in the available literature, some of these issues came with a solution and some came with hints on how to find a solution.
 
 \subsection{Results}
-RQ1 - The following issues can occur when implementing an ESB architecture solution in a software project (according to available documentation):
 
 \begin{description}
 
@@ -323,8 +322,8 @@ RQ1 - The following issues can occur when implementing an ESB architecture solut
 
 \begin{description}
 \item[2.1] No solution is provided. Hower, we believe that this issue can be handled by the fact that you know that it exists. If a project is to be started and the project manager knows about the issues that may occur, education can be started at an early stage, preventing slow progress on implementation
-\item[2.2] This, as far as we have found out, had been handled by trial and error. Unfortunately this is the best answer to this issue at the moment. A more stable solution is to choose a version of a ESB and stick to it, ignoring possible improvements in order to keep the functionality already implemented.
-\item[2.3] This is still an issue and will keep in being an issue. Until the different providers of ESB solutions sit down and decide on a common standard for a minimum of functionality, there is no way of deciding on what needs to be there to be able to say that you’ve got a ESB integrated system.
+\item[2.2] This, as far as we have found out, had been handled by trial and error. Unfortunately this is the best answer to this issue at the moment. A more stable solution is to choose a version of an ESB and stick to it, ignoring possible improvements in order to keep the functionality already implemented.
+\item[2.3] This is still an issue and will keep in being an issue. Until the different providers of ESB solutions sit down and decide on a common standard for a minimum of functionality, there is no way of deciding on what needs to be there to be able to say that you’ve got an ESB integrated system.
 \item[2.4] This is an issue that can quite easily be handled. Several different session ids can be stored in the ESB in order to keep connection with all the nodes. Another solution is to make the ESB perform a login and logout on each node, every time  a request is made.
 \item[2.5] There are some xml editors with a GUI editor. These are not free from bugs, but combined with other tools they can provide an easier overview in the development process.
 \item[2.6] This can be addressed in two ways. 1. Hope for the best. Meaning that the development relies on community and available documentation, with no additional economical cost for the project. 2. Purchase of enterprise license. Meaning a economical cost, but guarantees more documentation and support in the process. The first alternative would be advised for teams with experience of the platform and vice verca.
