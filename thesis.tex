@@ -32,14 +32,18 @@
 \maketitle
 
 \begin{abstract}
-Abstract
+As the Enterprise Service Bus is the newest standard in system integration, more and more companies want to get on board. 
+Because we had a hard time trying to find any helpful information when we was trying to get started, we saw a need for a document that could give answer to the most common obstacles. 
+Our goal was to find as many known issues as possible with the architecture and then, through samplings, try to find solutions to these issues. 
+We have performed a literature survey to help us find known issues. With the results, we created a questionnaire that was designed to provide answers to the issues we gathered. This questionnaire was later answered by a group of software developers that all had various experience with system integration. 
+We found four known issues in the literature survey and managed to get satisfiable solutions to three of these. When we gathered the result from the sampling, we got six additional issues from real world software integration.
+The main solution that cover most of the issues is to start planning early when this type of project is about to begin. Educate developers, establish rules for communication flow between the different nodes to avoid confusion and since there doesn't seem to be any help to get from the community as of current date, purchase an enterprise license to get professional support in case you are uncertain on how to get things rolling. 
 
-\keywords{ESB, Enterprise Service Bus}
+\keywords{ESB, Enterprise Service Bus, ESB issues, Service Bus problems}
 \end{abstract}
 
 \newpage
 \setcounter{tocdepth}{3}
-\tableofcontents
 \newpage
 
 \section{Introduction}
@@ -398,6 +402,7 @@ From the survey we also got some additional issues concerning ESB integration th
 \begin{description}
 \item[RQ2.1] The provided, possible solutions to the encountered issues:
 \begin{description}
+
 \item[ISSUE1.1] In real world implementation, it is important to set rules of communication. As can be seen in the answers to question 2.2 in appendix a, a firm rule of how communication needs to be applied when beginning ESB implementation. 
 \item[ISSUE1.2] This should not be an issue as the ESB only performs actions that would need to be done by the individual nodes if the ESB wasn’t there to sort it out. As long as the ESB only does what it needs to do, all nodes should get what it needs, when it needs it. Any bottlenecks is most likely to be found in connection or slow servers.
 \item[ISSUE1.3] This issue can’t be either confirmed or dismissed. as we could not find any participant that had enough experience in integration to give any directions on the matter.
