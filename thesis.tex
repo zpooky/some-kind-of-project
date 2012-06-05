@@ -176,7 +176,7 @@ We are currently involved in a student project together with 10 other student th
 \section{Research questions and research design}
 In this section we will present our research questions and also how we plan to find answers to these questions. We will provide the details on how we will collecte published articles and how this will lead to the forming of a questionare to be used in further information gathering.
 \subsubsection{Research Questions}
-
+We want to find as many ESB integration obstacles as possible and then provide solutions to these. Our aim with this is to produce guidelines for developers who is to begin with ESB integration to help them avoid unnecessary cost and timeloss.
 \begin{description}
 \item[RQ1] What disadvantages are mentioned of ESB solutions and in what context in the literature?
 \item[RQ2] What disadvantages are experienced by the practitioners?
@@ -209,6 +209,33 @@ Searches were conducted on the library of Blekinge institute of technology and o
 
 To limit our results, we decided to disregard articles that were published prior to 2005, as this field is in eternal progress and information gets old fast.
 Other criteria that needs to be met is a clear value to the purposes of this paper in the abstract, since time is of the essence we will not have time to read papers that we are not sure will give ous something.
+
+\subsection{Literature review results}
+
+The following papers were found during our literature review, and passed our selection criteria:
+\begin{enumerate}
+\item Enterprise Service Bus: A Performance Evaluation\cite{sanjay11}. Published by Sanjay P. Ahuja, Amit Patel in 2011. This paper seemed useful because it contained a performance analysis between different types of ESBs.
+\item SOAs \& ESBs\cite{paisley05}. Published by J. Paisley in 2005. This article brings up some of the difficulties that can be encountered when implementing an ESB.
+\item Getting on Board the Enterprise Service\cite{ortiz07}. Published by S. Ortiz in 2007. This article brings up some of the challenges that can be encountered when implementing an ESB.
+\item A high performance enterprise service bus platform for complex event processing\cite{bo08}. Published by Deng Bo,  Ding Kun and Zhang Xiaoyi in 2008. This paper brings up some of the challenges that can be encountered when implementing a complex ESB solution.
+\item Service-Oriented Performance Modeling the MULE Enterprise Service Bus (ESB) Loan Broker Application\cite{brebner09}. Published by P. Brebner in 2009. This paper handles both scaling and performance in ESBs.
+\item An integration strategy for large enterprises\cite{risimic06}. Published by Dejan Rismic in 2006. It provides information on important aspects of ESB. This is needed to be able to understand and improve the ESB.
+\item Performance Prediction of Service-Oriented Applications based on an Enterprise Service Bus\cite{gorton07}. Published by Yan Liu, Ian Gorton and Liming Zhu in 2007. This paper handles important aspects of ESB performance. Needed to be able to find performance issues.
+\end{enumerate}
+
+After we settled on the these specific documents, we began reading through them from top to bottom, noting everything that can be seen as an issue or flaw in the ESB architecture.
+Some of the included documents is not part of the literature to provide a source of issues, but instead serves as a source to be able to get better understanding of the ESB.
+Besides these, all documents have one common denominator: They handle aspects of the ESB that can be seen as issues or in need of improvement.
+The literature study gave us the following list with issues/flaws in ESB solutions:
+
+\begin{enumerate}
+\item It is hard to decide where all functionality goes. Some things could be placed in the ESB but might as well be in one of the nodes in the system \cite{ortiz07}.
+\item There is a risk of slow performance, as the ESB prohibits direct communication between nodes.
+\item Migration of systems integrated with older architectures can be hard to do \cite{ortiz07}.
+\item Support is sometimes limited and documentation and community answers is not always available without a lot of effort.
+\end{enumerate}
+
+We thought that we would find more issues in this field and there is a slight possibility that we have missed articles that could provide more information. But we feel confident that the search strings we used, in the databases we searched, provided us with articles that together covers the issues that are involved with integration with an ESB architecture.
 
 \subsection{Interview survey design}
 
@@ -262,32 +289,6 @@ The survey will contain the following questions and might be followed up by addi
 
 \end{itemize}
 
-\subsection{Literature review results}
-
-The following papers were found during our literature review, and passed our selection criteria:
-\begin{enumerate}
-\item Enterprise Service Bus: A Performance Evaluation\cite{sanjay11}. Published by Sanjay P. Ahuja, Amit Patel in 2011. This paper seemed useful because it contained a performance analysis between different types of ESBs.
-\item SOAs \& ESBs\cite{paisley05}. Published by J. Paisley in 2005. This article brings up some of the difficulties that can be encountered when implementing an ESB.
-\item Getting on Board the Enterprise Service\cite{ortiz07}. Published by S. Ortiz in 2007. This article brings up some of the challenges that can be encountered when implementing an ESB.
-\item A high performance enterprise service bus platform for complex event processing\cite{bo08}. Published by Deng Bo,  Ding Kun and Zhang Xiaoyi in 2008. This paper brings up some of the challenges that can be encountered when implementing a complex ESB solution.
-\item Service-Oriented Performance Modeling the MULE Enterprise Service Bus (ESB) Loan Broker Application\cite{brebner09}. Published by P. Brebner in 2009. This paper handles both scaling and performance in ESBs.
-\item An integration strategy for large enterprises\cite{risimic06}. Published by Dejan Rismic in 2006. It provides information on important aspects of ESB. This is needed to be able to understand and improve the ESB.
-\item Performance Prediction of Service-Oriented Applications based on an Enterprise Service Bus\cite{gorton07}. Published by Yan Liu, Ian Gorton and Liming Zhu in 2007. This paper handles important aspects of ESB performance. Needed to be able to find performance issues.
-\end{enumerate}
-
-After we settled on the these specific documents, we began reading through them from top to bottom, noting everything that can be seen as an issue or flaw in the ESB architecture.
-Some of the included documents is not part of the literature to provide a source of issues, but instead serves as a source to be able to get better understanding of the ESB.
-Besides these, all documents have one common denominator: They handle aspects of the ESB that can be seen as issues or in need of improvement.
-The literature study gave us the following list with issues/flaws in ESB solutions:
-
-\begin{enumerate}
-\item It is hard to decide where all functionality goes. Some things could be placed in the ESB but might as well be in one of the nodes in the system \cite{ortiz07}.
-\item There is a risk of slow performance, as the ESB prohibits direct communication between nodes.
-\item Migration of systems integrated with older architectures can be hard to do \cite{ortiz07}.
-\item Support is sometimes limited and documentation and community answers is not always available without a lot of effort.
-\end{enumerate}
-
-We thought that we would find more issues in this field and there is a slight possibility that we have missed articles that could provide more information. But we feel confident that the search strings we used, in the databases we searched, provided us with articles that together covers the issues that are involved with integration with an ESB architecture.
 
 \section{Data collecting results}
 In this section we will present the results we got from the sampling that we performed.
