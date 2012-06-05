@@ -229,9 +229,9 @@ Besides these, all documents have one common denominator: They handle aspects of
 The literature study gave us the following list with issues/flaws in ESB solutions:
 
 \begin{enumerate}
-\item It is hard to decide where all functionality goes. Some things could be placed in the ESB but might as well be in one of the nodes in the system \cite{ortiz07}.
-\item There is a risk of slow performance, as the ESB prohibits direct communication between nodes.
-\item Migration of systems integrated with older architectures can be hard to do \cite{ortiz07}.
+\item It is hard to decide where all functionality goes. It has been mentioned that it is not always clear if functionality should be placed in the ESB or in one of the nodes in the system. A format transformation for example, could sometimes as easily be implemented in a node as in the ESB.  \cite{ortiz07}.
+\item There is a risk of slow performance, as the ESB prohibits direct communication between nodes, providing an additional step between nodes.
+\item Migration of systems integrated with older architectures can be hard to do as older systems can have communication that goes everywhere and no clear way of sorting the flows.\cite{ortiz07}.
 \item Support is sometimes limited and documentation and community answers is not always available without a lot of effort.
 \end{enumerate}
 
