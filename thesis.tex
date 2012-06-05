@@ -33,11 +33,6 @@
 
 \begin{abstract}
 As the Enterprise Service Bus is the newest standard in system integration, more and more companies want to get on board. 
-Because we had a hard time trying to find any helpful information when we was trying to get started, we saw a need for a document that could give answer to the most common obstacles. 
-Our goal was to find as many known issues as possible with the architecture and then, through samplings, try to find solutions to these issues. 
-We have performed a literature survey to help us find known issues. With the results, we created a questionnaire that was designed to provide answers to the issues we gathered. This questionnaire was later answered by a group of software developers that all had various experience with system integration. 
-We found four known issues in the literature survey and managed to get satisfiable solutions to three of these. When we gathered the result from the sampling, we got six additional issues from real world software integration.
-The main solution that cover most of the issues is to start planning early when this type of project is about to begin. Educate developers, establish rules for communication flow between the different nodes to avoid confusion and since there doesn't seem to be any help to get from the community as of current date, purchase an enterprise license to get professional support in case you are uncertain on how to get things rolling. 
 
 \keywords{ESB, Enterprise Service Bus, ESB issues, Service Bus problems}
 \end{abstract}
@@ -425,16 +420,26 @@ From the survey we also found some additional issues concerning ESB integration 
 \end{description}
 
 \section{Thesis conclusions and contribution}
-We have been able to provide answers to a large majority of the possible issues that can be encountered when implementing an ESB. Not only did we manage to find possible solutions or workarounds for most of the issues that were found in the literature review, but we also managed to provide solutions to almost every issue that came up in the surveys.
+So the goal with this report whas to find beginner problems with ESB integration and solve this issues. Have we succeeded? Well, we have been able to provide answers to a large majority of the possible issues that can be encountered when implementing an ESB. Not only did we manage to find possible solutions or workarounds for most of the issues that were found in the literature review, but we also managed to provide solutions to almost every issue that came up in the surveys.
 The issues that were not provided with a solution, at least comes with directions as how to handle. Providing this document should be enough to let a project planner make an informed decision on how to tackle ESB implementation. It provides information on what to consider when thinking about licenses and also information on how to handle flows within the system.
 
 So are our methods comprehensive enough to give the result legitmity? Compared to previously published work that has not given much focus on how to acctualy handle issues, this thesis is more focused on helping new practitioners to avoid the most common problems.
 We mentioned our litterature survey results and concluded that we where confident with the amount of information we were able to get from this actually was the most important parts. We think that, given the answers from our sampling, it is confirmed that the issues we found are also the issues that is encountered by practitioners.
-The number of performed interviews may be a little low, but we believe it still gave us the answers we needed. Since some of the partitioners have worked 6 months or less with ESB integration, we get the views of persons that has very recently been through all the problems with adapting to a new way of working. And with the more experienced integrationers from Ericsson we got some insight from people who has more experience with various kinds of integration and because of this is able to provide more comparative information.
+The number of performed interviews may be a little low, but we believe it still gave us the answers we needed. Since some of the partitioners have worked 6 months or less with ESB integration, we get the views of persons that has very recently been through all the problems with adapting to a new way of working. Furthermore, since these participants have been in direct contact with Mulesoft, they have been able to provide information that most developers will not be able to obtain. And with the more experienced integrationers from Ericsson we got some insight from people who has more experience with various kinds of integration and because of this is able to provide more comparative information.
 
-Previously available information fails to give a concluded image on ESB integration and issue handling, with this thesis all the pieces should be incorporated so that an informed plan can be established.
+Previously available information fails to give a concluded image on ESB integration and issue handling, with this thesis all the pieces should be incorporated so that an informed plan can be established (see guidelines below).
 
 If we would be to start over on this thesis, the main thing that we would change is that we would try to get a larger number of experienced practitioners as this would have increased the chance of getting tips on dealing with migration of older integrated systems. We would also have tried to perform some test of our own, to se if we could find problems with response times and such.
+
+\section{Guidelines}
+\begin{itemize}
+\item Begin planning early and set up firm rules for information flow
+\item If there is no previous experience with ESB integration in the project, start education prior to project start
+\item Make sure you know what version of the chosen ESB solution you are going to use, so you know what information you can use
+\item If many nodes use separate session id, store these in the ESB to make sure it can stay connected with all nodes
+\item As a lot of ESB implementation is done in XML, it might be a good idea to look into XML editors with a GUI to make it easier to get an overview
+\item If you feel you are going to need a lot of support, get an enterprise licence
+\end{itemize}
 
 \newpage
 \bibliographystyle{plain}
