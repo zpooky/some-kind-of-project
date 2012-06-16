@@ -28,8 +28,8 @@
 \includepdf{thesis-main.pdf}
 
 \begin{abstract}
-This bachelor thesis looks into the use Enterprise Servise Bus(ESB) an the central hub in system integration. The thesis will focus on issues with ESB integration and solutions to these problems, as the positive aspects have been covered in other reports. 
-The thesis will contribute with a set of guidelines to help new ESB developers get started without the most recurring issues. These guidelines will be formed by answers from a questionare that is in turn formed by a literature review, designed to find issues with ESB integration.
+This bachelor thesis looks into the use Enterprise Service Bus(ESB) an the central hub in system integration. The thesis will focus on issues with ESB integration and solutions to these problems, as the positive aspects have been covered in other reports. 
+The thesis will contribute with a set of guidelines to help new ESB developers get started without the most recurring issues. These guidelines will be formed by answers from a questionnaire that is in turn formed by a literature review, designed to find issues with ESB integration.
 We can conclude that a project that is well informed can avoid a whole lot of the the initial issues with some planning, if they follow the guidelines listed at the end of this thesis.
 
 \keywords{ESB, Enterprise Service Bus, ESB issues, Service Bus problems}
@@ -73,7 +73,7 @@ What we have concluded from the available literature we see there is a lack of i
 Most of the papers we read discussed the advantages of ESB compared to older integration solutions like Hub-and-Spoke and Point-to-Point. Many of the papers focused on comparisons of different ESB solutions, those do not provide information on disadvantages of an ESB solutions just performance data on various ESB products. Because of these conclusions we decided to focus our thesis on the disadvantages of the ESB integration architecture.
 
 \section{Theory}
-In this section we will provide the background knowledge that can be usefull to be able to understand what we are investigating.
+In this section we will provide the background knowledge that can be useful to be able to understand what we are investigating.
 The techniques and terms explained are:
 \begin{itemize}
 \item Point-to-Point Integration
@@ -104,7 +104,7 @@ This method is simple and may appeal when there is just a few nodes that needs t
 \subsection{Hub-and-Spoke Integration}
 The Hub-and-Spoke\cite{risimic06,hasptp} method was the next step of integration patterns. In this pattern a central hub connects each node with a spoke. For each additional node only a single new connection needs to be defined. From this model much of the required components that exists today was laid out and defined: Message transformation, Message protocol standards, protocol security translation and so on. Once integration with multiple system was possible the need to share resources became great. The first method of integration with multiple systems came with the Remote Procedure Call (RPC) which was designed to function in a similar way as a local procedure call. The rise of distributed computing required a more modular system architecture and as a result required a more complex integration solution. The technologies of Remote procedure call and Distributed Object uses a method of tightly specified interfaces. As the system became more complex the and more changes to the interfaces as a result, it became very hard and costly to maintain and update those interfaces. Additional problems arose because of disparate system was not able to natively communicate with each other and resulted in many communication problems. These problems instagated in the rise of manny new communication technologies. One of those was Web Services, which is a point-to-point pattern with well defined and loosely coupled interfaces. The definition of loosely coupled is that the message can contain an undefined payload in either a text or a binary format.
 
-The advantages of hub and spoke compared to point to point is that it has a reduced number of required connections. It also decouples the different nodes so they do not have to know about each other and makes it much easier to add and remove nodes. Because the only changes that have to be made is in the hub. As a result we have a system of independent distributed nodes that are interchangeable alto with the tight coupling that hub-and-spoke uses this is hard and time costley.
+The advantages of hub and spoke compared to point to point is that it has a reduced number of required connections. It also decouples the different nodes so they do not have to know about each other and makes it much easier to add and remove nodes. Because the only changes that have to be made is in the hub. As a result we have a system of independent distributed nodes that are interchangeable alto with the tight coupling that hub-and-spoke uses this is hard and time costly.
 
 \subsection{Enterprise Service Bus ESB}
 The Enterprise Service Bus is the newest iteration of Integration solutions. Today an Enterprise Service Bus is the most popular infrastructure for implementing Service-Oriented Architectures\cite{esb}.The topology resembles that of the Hub-and-Spokes. The main difference of the ESB to the Hub-and-spoke is that ESB focus on open standards and manly on Service Oriented Architecture.
@@ -119,7 +119,7 @@ Some of the core features of an ESB is:
 \item Messaging- Support for asynchronous and synchronous messaging, request/response, send-and-forget, publish/subscribe.
 \item Transaction Management - The ability to support different types of transaction standards.
 \item Platform independent - The ESB should only use protocols and technologies that are platform independent.
-\item Audit - Monitoring status, logging, metrics, admin console.
+\item Audit - Monitoring status, logging, metrics, administration console.
 \item Legacy System - Support for legacy system protocols to allow integration with older system.
 \item Message Aggregation/Splitting - To be able to merge and split messages.
 \item Schema Validation - The possibility to verify the correctness of a message according to the message definition.
@@ -136,7 +136,7 @@ SOAP is a lightweight protocol intended for exchanging structured information in
 
 Advantages
 \begin{itemize}
-\item The SOAP protocol allows transportation on a various un specific types of application and transportation layer protocols.
+\item The SOAP protocol allows transportation on a various unspecific types of application and transportation layer protocols.
 \end{itemize}
 Disadvantages
 \begin{itemize}
@@ -151,7 +151,7 @@ WSDL is a XML based schema languages used to define which operations a web servi
 UDDI is a XML standard that contains information about Web Service and its functionality\cite{yang11}. it uses SOAP to communicate. It is used for identify what a service does and help a consumer find which service suits him best to perform a specific task. The register also contains technical information and links to the various WSDL.
 
 \subsection{Representational state transfer REST}
-REST is a standard for how a web standard like HTTP and URL should be used. To confrm to this standards is to be RESTful. The Representational State Transfer (REST) style is an abstraction of the architectural elements within a distributed hypermedia system\cite{rest}.The REST architecture consists of six constraints. 
+REST is a standard for how a web standard like HTTP and URL should be used. To confirm to this standards is to be RESTful. The Representational State Transfer (REST) style is an abstraction of the architectural elements within a distributed hypermedia system\cite{rest}.The REST architecture consists of six constraints. 
 
 \subsubsection{Client–Server}
 Separating user interface with data storage. The server is not aware of the user interface it just provides the data and vice versa. This will improve the scalability allowing the clients to be interchangeable.
@@ -172,12 +172,12 @@ Using a architecture hierarchy will result in improved system scalability, allow
 This is an optional constraint. This allows the server to provide finished code that contains general functionality to be used in client. Allowing the server to change part of the client code. The code can be in a form of JavaScript or Java applets.
 
 \subsection{Student project}
-We are currently involved in a student project together with 10 other student that works together with a dominating, european telecom company in . The goal of this project is to integrate several of the companys existing products to create a totaly new system. There is a lot of things that we are not allowed to mention about this project but the technique of choise for integration is not secret, we are using an ESB solution from Mulesoft\cite{mule}. The experiences of the participants in this project is worth a lot. Partialy because everyone has recently been involved in starting integration with an ESB and have the problems fresh in their memory ant partialy because we, thanks to the companys position in the software development area, was able to get in personal contact with Mulesoft for guidance on how to progress with our development. During this guidance, we also got confirmation directly from Mulsesoft that there is known problems with the available documentation.
+We are currently involved in a student project together with 10 other student that works together with a dominating, European telecom company in . The goal of this project is to integrate several of the companys existing products to create a totaly new system. There is a lot of things that we are not allowed to mention about this project but the technique of choice for integration is not secret, we are using an ESB solution from Mulesoft\cite{mule}. The experiences of the participants in this project is worth a lot. Partially because everyone has recently been involved in starting integration with an ESB and have the problems fresh in their memory ant partially because we, thanks to the companies position in the software development area, was able to get in personal contact with Mulesoft for guidance on how to progress with our development. During this guidance, we also got confirmation directly from Mulsesoft that there is known problems with the available documentation.
 
 
 
 \section{Research questions and research design}
-In this section we will present our research questions and also how we plan to find answers to these questions. We will provide the details on how we will collecte published articles and how this will lead to the forming of a questionare to be used in further information gathering.
+In this section we will present our research questions and also how we plan to find answers to these questions. We will provide the details on how we will collect published articles and how this will lead to the forming of a questionnaire to be used in further information gathering.
 \subsubsection{Research Questions}
 We want to find as many ESB integration obstacles as possible and then provide solutions to these. Our aim with this is to produce guidelines for developers who is to begin with ESB integration to help them avoid unnecessary cost and timeloss.
 \begin{description}
@@ -190,7 +190,7 @@ We want to find as many ESB integration obstacles as possible and then provide s
 
 \begin{description}
 \item[RQ1] Study of the result from the literature review.
-\item[RQ2] Interviews with participants from a leading telecom company in europe and also developers from the project we are currently working in. The interviews will be conducted with a survey based on the result from \emph{RQ1}.
+\item[RQ2] Interviews with participants from a leading telecom company in Europe and also developers from the project we are currently working in. The interviews will be conducted with a survey based on the result from \emph{RQ1}.
 \item[RQ2.1] Study of the result from \emph{RQ1} and answers given in \emph{RQ2}. Besides this, we will gather information from the various communities connected to the different ESB solutions.
 \end{description}
 
@@ -242,14 +242,14 @@ We thought that we would find more issues in this field and there is a slight po
 
 \subsection{Interview survey design}
 
-We have conducted interviews with participants in our development team that are currently in the process of implementing an ESB with the help of a survey and also with developers from the large, international telecom company we are currently working on. The participants from the telecom company are software developers who have been spending many years with system integration, they are valuable because we need information from people who have solved a lot of different integration problems. Not only with ESB integration but also general integration issues. The other participants in our survey will come from our student projekt. As mentioned in section 2.9, the participants have recently been introduced to many different diffuculties with ESB integration. They also have first hand information from Mulesoft guidance.
+We have conducted interviews with participants in our development team that are currently in the process of implementing an ESB with the help of a survey and also with developers from the large, international telecom company we are currently working on. The participants from the telecom company are software developers who have been spending many years with system integration, they are valuable because we need information from people who have solved a lot of different integration problems. Not only with ESB integration but also general integration issues. The other participants in our survey will come from our student project. As mentioned in section 2.9, the participants have recently been introduced to many different difficulties with ESB integration. They also have first hand information from Mulesoft guidance.
 The survey is created from the result of the literature review and is designed to accomplish two things.
 \begin{enumerate}
 \item Confirm that the known issues from the literature review is also present in the projects we are involved in. If this is not the case, show how the particular issue has been handled.
 \item See if there are other issues that we have not found in previous research papers. We will also try to get the participants to try to think of possible solutions.
 \end{enumerate}
 
-We chose to focus on issues and solutions to these. This is because a lot of the existing papers alreade have covered the possitive parts of ESN integration and another list of good things would not giva any real contribution.
+We chose to focus on issues and solutions to these. This is because a lot of the existing papers already have covered the positive parts of ESB integration and another list of good things would not give any real contribution.
 Our goal is to have a range between six to eight participants in this survey with varying experience in ESB Integration. We initially try to get as many professional ESB Integrators as possible then if they are not enough we will ask participants from our software project who has experience in ESB integration. The reason we decided on the number of participants was because of the limited time we had we thought it reasonable with that range of people. The challenge was to find people we the experience who also had time to spare to answer our questionnaire. 
 
 The survey will contain the following questions:
@@ -261,7 +261,7 @@ The survey will contain the following questions:
 \item If so, what?
 \end{itemize}
 
-\item Is it hard to decide which part of the system functionality really belongs in the ESB?%todo
+\item Is it hard to decide which part of the system functionality really belongs in the ESB?
 \begin{itemize}
 \item If so, please elaborate
 \item If not, how do you decide?
@@ -301,7 +301,7 @@ In this section we will present the results we got from the sampling that we per
 
 Our survey where filled out by seven individuals, all in some way connected to our current project at a leading, international telecom company. We chose participants based on their previous knowledge of system integration. Both with ESB and other techniques. Four of the participants are in our group and are currently working actively with integration using an ESB from Mulesoft, their value is explained in more detail in section 2.9. The other three are employees at the telecom company, which we have got in contact with while performing our project at the telecom company, the value of their answers is, as mentioned before, a lot of integration experience, both with ESB and other architectures, providing specific and generic knowledge.
 The surveys was conducted by handing the participant a printed survey with our previously stated questions  in section \ref{survey}. After this, the person had all the time he or she needed to fill in their answers.
-All the participants had one of us present at all time in case something was unclear, badly formulated or in case they just wanted to say something that was not covered by the survey. The survy where done anonymously by all participants. Their roles and experience where recorded during the interviews. The participants roles and experience can be found in Apendix A.
+All the participants had one of us present at all time in case something was unclear, badly formulated or in case they just wanted to say something that was not covered by the survey. The survey where done anonymously by all participants. Their roles and experience where recorded during the interviews. The participants roles and experience can be found in Appendix A.
 
 \subsection{Collected data}
 The collected answers from the survey can be found in appendix A.
@@ -322,7 +322,7 @@ If we compare these initial issues one by one with the answers we got, we will s
 \begin{tabular}{ | l | p{9cm} | l | l |}
 \hline
 Nr & Question & Yes & No \\ \hline
-Q1 & Do you have any experience withintegration using an ESB? & 7 (100\%) & 0 (0\%) \\ \hline
+Q1 & Do you have any experience with integration using an ESB? & 7 (100\%) & 0 (0\%) \\ \hline
 \end{tabular}
 
 \begin{description}
@@ -350,7 +350,7 @@ Q3 & Do you experience an issue with slower communication between nodes because 
 \end{tabular}
 
 \begin{description}
-\item[Q3] When trying to confirm this issue, we got ~71.4\% disagreement from the partitioners in the survey. As this is quite a large percentage it indicates that this is not a major issue. But still it’s not 100\%, so there may still be ways to resolve it.
+\item[Q3] When trying to confirm this issue, we got ~71.4\% disagreement from the participants in the survey. As this is quite a large percentage it indicates that this is not a major issue. But still it’s not 100\%, so there may still be ways to resolve it.
 \end{description}
 
 \begin{tabular}{ | l | p{9cm} | l | l |}
@@ -360,17 +360,17 @@ Q4 & Have you ever migrated older, integrated systems to the ESB architecture? &
 \end{tabular}
 
 \begin{description}
-\item[Q4]  Unfortunately we couldn’t find anyone who had dealt with migration of older integrated systems to the ESB architecture. This prevents us from obtaining solutions to issues connected to this issue.
+\item[Q4]  Unfortunately we couldn't find anyone who had dealt with migration of older integrated systems to the ESB architecture. This prevents us from obtaining solutions to issues connected to this issue.
 \end{description}
 
 \begin{tabular}{ | l | p{9cm} | l | l |}
 \hline
 Nr & Question & Yes & No\\ \hline
-Q5 & Are you able to get support or find information to resolve the issues thatare encountered during integration? & 2 (14\%) & 6 (86\%)\\ \hline
+Q5 & Are you able to get support or find information to resolve the issues that are encountered during integration? & 2 (14\%) & 6 (86\%)\\ \hline
 \end{tabular}
 
 \begin{description}
-\item[Q5] This is clearly an issue in the industri. ~86\% of the participants in our survey claim to have problem in finding the information and support they need. The remaining percentile said when asked, that he had not been that involved with integration that he had to find any information that wasn't already available within the group.
+\item[Q5] This is clearly an issue in the industry. ~86\% of the participants in our survey claim to have problem in finding the information and support they need. The remaining percentile said when asked, that he had not been that involved with integration that he had to find any information that wasn't already available within the group.
 \end{description}
 
 These results provides us with possible answers to both research question 2 and 2.1 on all points except the issue with migration of previously integrated systems.
@@ -397,7 +397,7 @@ From the survey we also found some additional issues concerning ESB integration 
 \begin{description}
 \item[ISSUE2.1] If the team developing the ESB falls behind, this affects all teams that utilize the ESB.
 \item[ISSUE2.2] Big changes between different versions of the ESB makes it hard when documentation isn't up to date.
-\item[ISSUE2.3] There is no stated standard, or best practise, when it comes to ESB implementation.
+\item[ISSUE2.3] There is no stated standard, or best practice, when it comes to ESB implementation.
 \item[ISSUE2.4] Problems when different nodes use different sessions. The ESB is usually stateless, meaning that it has no session id, this can be a problem if some nodes need their own sessions.
 \item[ISSUE2.5] A lot of the ESB coding is done in XML which is not a proper programming language and this makes it hard to get a good overview of the code. 
 \item[ISSUE2.6] To get proper documentation, a enterprise license might be needed. This is expensive and might raise the projects budget.
@@ -422,22 +422,22 @@ From the survey we also found some additional issues concerning ESB integration 
 \item[ISSUE2.3] This is still an issue and will keep in being an issue. Until the different providers of ESB solutions sit down and decide on a common standard for a minimum of functionality, there is no way of deciding on what needs to be there to be able to say that you’ve got an ESB integrated system.
 \item[ISSUE2.4] This is an issue that can quite easily be handled. Several different session ids can be stored in the ESB in order to keep connection with all the nodes. Another solution is to make the ESB perform a login and logout on each node, every time  a request is made.
 \item[ISSUE2.5] There are some xml editors with a GUI editor. These are not free from bugs, but combined with other tools they can provide an easier overview in the development process.
-\item[ISSUE2.6] This can be addressed in two ways. 1. Hope for the best. Meaning that the development relies on community and available documentation, with no additional economical cost for the project. 2. Purchase of enterprise license. Meaning a economical cost, but guarantees more documentation and support in the process. The first alternative would be advised for teams with experience of the platform and vice verca.
+\item[ISSUE2.6] This can be addressed in two ways. 1. Hope for the best. Meaning that the development relies on community and available documentation, with no additional economical cost for the project. 2. Purchase of enterprise license. Meaning a economical cost, but guarantees more documentation and support in the process. The first alternative would be advised for teams with experience of the platform and vice versa.
 \end{description}
 
 \end{description}
 
 \section{Thesis conclusions and contribution}
-So the goal with this report whas to find beginner problems with ESB integration and solve this issues. Have we succeeded? Well, we have been able to provide answers to a large majority of the possible issues that can be encountered when implementing an ESB. Not only did we manage to find possible solutions or workarounds for most of the issues that were found in the literature review, but we also managed to provide solutions to almost every issue that came up in the surveys.
+So the goal with this report was to find beginner problems with ESB integration and solve this issues. Have we succeeded? Well, we have been able to provide answers to a large majority of the possible issues that can be encountered when implementing an ESB. Not only did we manage to find possible solutions or workarounds for most of the issues that were found in the literature review, but we also managed to provide solutions to almost every issue that came up in the surveys.
 The issues that were not provided with a solution, at least comes with directions as how to handle. Providing this document should be enough to let a project planner make an informed decision on how to tackle ESB implementation. It provides information on what to consider when thinking about licenses and also information on how to handle flows within the system.
 
-So are our methods comprehensive enough to give the result legitmity? Compared to previously published work that has not given much focus on how to acctualy handle issues, this thesis is more focused on helping new practitioners to avoid the most common problems.
-We mentioned our litterature survey results and concluded that we where confident with the amount of information we were able to get from this actually was the most important parts. We think that, given the answers from our sampling, it is confirmed that the issues we found are also the issues that is encountered by practitioners.
-The number of performed interviews may be a little low, but we believe it still gave us the answers we needed. Since some of the partitioners have worked 6 months or less with ESB integration, we get the views of persons that has very recently been through all the problems with adapting to a new way of working. Furthermore, since these participants have been in direct contact with Mulesoft, they have been able to provide information that most developers will not be able to obtain. And with the more experienced integrationers from a leading european telecom company we got some insight from people who has more experience with various kinds of integration and because of this is able to provide more comparative information.
+So are our methods comprehensive enough to give the result legitimacy? Compared to previously published work that has not given much focus on how to actually handle issues, this thesis is more focused on helping new practitioners to avoid the most common problems.
+We mentioned our literature survey results and concluded that we where confident with the amount of information we were able to get from this actually was the most important parts. We think that, given the answers from our sampling, it is confirmed that the issues we found are also the issues that is encountered by practitioners.
+The number of performed interviews may be a little low, but we believe it still gave us the answers we needed. Since some of the participants have worked 6 months or less with ESB integration, we get the views of persons that has very recently been through all the problems with adapting to a new way of working. Furthermore, since these participants have been in direct contact with Mulesoft, they have been able to provide information that most developers will not be able to obtain. And with the more experienced integrationers from a leading European telecom company we got some insight from people who has more experience with various kinds of integration and because of this is able to provide more comparative information.
 
 Previously available information fails to give a concluded image on ESB integration and issue handling, with this thesis all the pieces should be incorporated so that an informed plan can be established (see guidelines below).
 
-If we would be to start over on this thesis, the main thing that we would change is that we would try to get a larger number of experienced practitioners as this would have increased the chance of getting tips on dealing with migration of older integrated systems. We would also have tried to perform some test of our own, to se if we could find problems with response times and such.
+If we would be to start over on this thesis, the main thing that we would change is that we would try to get a larger number of experienced practitioners as this would have increased the chance of getting tips on dealing with migration of older integrated systems. We would also have tried to perform some test of our own, to see if we could find problems with response times and such.
 
 \section{Guidelines}
 \begin{itemize}
@@ -446,7 +446,7 @@ If we would be to start over on this thesis, the main thing that we would change
 \item Make sure you know what version of the chosen ESB solution you are going to use, so you know what information you can use
 \item If many nodes use separate session id, store these in the ESB to make sure it can stay connected with all nodes
 \item As a lot of ESB implementation is done in XML, it might be a good idea to look into XML editors with a GUI to make it easier to get an overview
-\item If you feel you are going to need a lot of support, get an enterprise licence
+\item If you feel you are going to need a lot of support, get an enterprise license
 \end{itemize}
 
 \newpage
