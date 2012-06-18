@@ -342,10 +342,6 @@ Q2 & Is it hard to decide which part of the system functionality really belongs 
 \item[Q2] On this question, we get a 50\% distribution of agreement to this issue. This is due to one participant answering “yes and no”. As it is not a unanimous agreement that the initial issue is in fact an obstacle, this provides possible solutions to the issue in question.
 \end{description}
 
-\begin{quote}
-  quote
-\end{quote}
-
 \begin{tabular}{ | l | p{9cm} | l | l |}
 \hline
 Nr & Question & Yes & No \\ \hline
@@ -385,6 +381,37 @@ We found possible solutions to the majority of the known issues we found, these 
 From the survey we also found some additional issues concerning ESB integration that was not found in the available literature, some of these issues came with a solution and some came with hints on how to find a solution.
 
 \subsection{Issues}
+
+{
+\setlength{\tabcolsep}{1ex}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{ | l | p{4cm} | p{6cm} | l | l |}
+\hline
+Nr & Issue & Solution & tmp & tmp \\ \hline
+1.1 & It is hard to decide where all functionality goes. Some things could be placed in the ESB but might as well be in one of the nodes in the system. & In real world implementation, it is important to set rules of communication. As can be seen in the answers to question 2.2 in appendix a, a firm rule of how communication needs to be applied when beginning ESB implementation.  & tmp & tmp \\ \hline
+1.2  & There is a risk of slow performance, as the ESB prohibits direct communication between nodes. & This should not be an issue as the ESB only performs actions that would need to be done by the individual nodes if the ESB wasn’t there to sort it out. As long as the ESB only does what it needs to do, all nodes should get what it needs, when it needs it. Any bottlenecks is most likely to be found in connection or slow servers. & tmp & tmp \\ \hline
+1.3  & Migration of systems integrated with older architectures can be hard to do. & This issue can’t be either confirmed or dismissed. as we could not find any participant that had enough experience in integration to give any directions on the matter. & tmp & tmp \\ \hline
+1.4  & Support is sometimes limited and documentation and community answers is not always available without a lot of effort. & This is absolutely confirmed and a solution is not easy to give. The survey-takers that are involved in our project are quite privileged. Since they are involved in a project tied to a leading telecom company (a company that have a huge influence on the industry, they got an easy access to first class assistance from the developers of the Mule ESB. Otherwise it is confirmed that support and community response is hard to get by and since our survey-takers have been privileged enough, we can confirm that support is an area where vast improvements are needed.  & tmp & tmp \\ \hline
+\end{tabular}
+}
+
+{
+\setlength{\tabcolsep}{1ex}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{ | l | p{4cm} | p{6cm} | l | l |}
+\hline
+Nr & Issue & Solution & tmp & tmp \\ \hline
+ISSUE2.1 & If the team developing the ESB falls behind, this affects all teams that utilize the ESB. & No solution is provided. Hower, we believe that this issue can be handled by the fact that you know that it exists. If a project is to be started and the project manager knows about the issues that may occur, education can be started at an early stage, preventing slow progress on implementation & tmp & tmp \\ \hline
+ISSUE2.2 & Big changes between different versions of the ESB makes it hard when documentation isn't up to date. & This, as far as we have found out, had been handled by trial and error. Unfortunately this is the best answer to this issue at the moment. A more stable solution is to choose a version of an ESB and stick to it, ignoring possible improvements in order to keep the functionality already implemented. & tmp & tmp \\ \hline
+ISSUE2.3 & There is no stated standard, or best practice, when it comes to ESB implementation. & This is still an issue and will keep in being an issue. Until the different providers of ESB solutions sit down and decide on a common standard for a minimum of functionality, there is no way of deciding on what needs to be there to be able to say that you’ve got an ESB integrated system. & tmp & tmp \\ \hline
+ISSUE2.4 & Problems when different nodes use different sessions. The ESB is usually stateless, meaning that it has no session id, this can be a problem if some nodes need their own sessions.  & This is an issue that can quite easily be handled. Several different session ids can be stored in the ESB in order to keep connection with all the nodes. Another solution is to make the ESB perform a login and logout on each node, every time  a request is made. & tmp & tmp \\ \hline
+ISSUE2.5 & A lot of the ESB coding is done in XML which is not a proper programming language and this makes it hard to get a good overview of the code. & There are some xml editors with a GUI editor. These are not free from bugs, but combined with other tools they can provide an easier overview in the development process. & tmp & tmp \\ \hline
+ISSUE2.6 & To get proper documentation, a enterprise license might be needed. This is expensive and might raise the projects budget. & This can be addressed in two ways. 1. Hope for the best. Meaning that the development relies on community and available documentation, with no additional economical cost for the project. 2. Purchase of enterprise license. Meaning a economical cost, but guarantees more documentation and support in the process. The first alternative would be advised for teams with experience of the platform and vice versa. & tmp & tmp \\ \hline
+\end{tabular}
+}
+
+
+
 
 \begin{description}
 
