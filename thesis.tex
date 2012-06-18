@@ -176,11 +176,6 @@ Using a architecture hierarchy will result in improved system scalability, allow
 \subsubsection{Code-on-Demand}
 This is an optional constraint. This allows the server to provide finished code that contains general functionality to be used in client. Allowing the server to change part of the client code. The code can be in a form of JavaScript or Java applets.
 
-\subsection{Student project}
-We were involved in a student project together with 10 other students that worked together with a dominating, European telecom company in Karlskrona. The goal of this project was to integrate several of the companys existing products to create a totaly new system. We were using an ESB solution from Mulesoft\cite{mule}. The experiences of the participants in this project was worth a lot. Partially because everyone hd recently been involved in starting integration with an ESB and had the problems fresh in their memory ant partially because we, thanks to the companies position in the software development area, were able to get in personal contact with Mulesoft for guidance on how to progress with our development. During this guidance, we also got confirmation directly from Mulsesoft that there is known problems with the available documentation.
-
-
-
 \section{Research questions and research design}
 In this section we will present our research questions and also how we plan to find answers to these questions. We will provide the details on how we will collect published articles and how this will lead to the forming of a questionnaire to be used in further information gathering.
 \subsubsection{Research Questions}
@@ -247,7 +242,6 @@ We thought that we would find more issues in this field and there is a slight po
 
 \subsection{Interview survey design}
 
-We have conducted interviews with participants in our development team that are currently in the process of implementing an ESB with the help of a survey and also with developers from the large, international telecom company we are currently working on. The participants from the telecom company are software developers who have been spending many years with system integration, they are valuable because we need information from people who have solved a lot of different integration problems. Not only with ESB integration but also general integration issues. The other participants in our survey will come from our student project. As mentioned in section 2.9, the participants have recently been introduced to many different difficulties with ESB integration. They also have first hand information from Mulesoft guidance.
 The survey is created from the result of the literature review and is designed to accomplish two things.
 \begin{enumerate}
 \item Confirm that the known issues from the literature review is also present in the projects we are involved in. If this is not the case, show how the particular issue has been handled.
@@ -299,12 +293,16 @@ The survey will contain the following questions:
 
 \end{itemize}
 
+These questiones was chosen to map the results in the literature review results.
+
 
 \section{Data collecting results}
 In this section we will present the results we got from the sampling that we performed.
 \subsection{Survey setup}
 
-Our survey where filled out by seven individuals, all in some way connected to our current project at a leading, international telecom company. We chose participants based on their previous knowledge of system integration. Both with ESB and other techniques. Four of the participants are in our group and are currently working actively with integration using an ESB from Mulesoft, their value is explained in more detail in section 2.9. The other three are employees at the telecom company, which we have got in contact with while performing our project at the telecom company, the value of their answers is, as mentioned before, a lot of integration experience, both with ESB and other architectures, providing specific and generic knowledge.
+We were involved in a student project together with 10 other students that worked together with a dominating, European telecom company in Karlskrona. The goal of this project was to integrate several of the companys existing products to create a totaly new system. We were using an ESB solution from Mulesoft\cite{mule}. The experiences of the participants in this project was worth a lot. Partially because everyone hd recently been involved in starting integration with an ESB and had the problems fresh in their memory ant partially because we, thanks to the companies position in the software development area, were able to get in personal contact with Mulesoft for guidance on how to progress with our development. During this guidance, we also got confirmation directly from Mulsesoft that there is known problems with the available documentation.
+
+Our survey was filled out by seven individuals, all in some way connected to our current project. We chose participants based on their previous knowledge of system integration. Both with ESB and other techniques. Four of the participants are in our group and are currently working actively with integration using an ESB from Mulesoft, their value is explained in more detail in section 2.9. The other three are employees at the telecom company, which we have got in contact with while performing our project at the telecom company, the value of their answers is, as mentioned before, a lot of integration experience, both with ESB and other architectures, providing specific and generic knowledge.
 The surveys was conducted by handing the participant a printed survey with our previously stated questions  in section \ref{survey}. After this, the person had all the time he or she needed to fill in their answers.
 All the participants had one of us present at all time in case something was unclear, badly formulated or in case they just wanted to say something that was not covered by the survey. The survey where done anonymously by all participants. Their roles and experience where recorded during the interviews. The participants roles and experience can be found in Appendix A.
 
@@ -375,7 +373,7 @@ Q5 & Are you able to get support or find information to resolve the issues that 
 \end{tabular}
 
 \begin{description}
-\item[Q5] This is clearly an issue in the industry. ~86\% of the participants in our survey claim to have problem in finding the information and support they need. The remaining percentile said when asked, that he had not been that involved with integration that he had to find any information that wasn't already available within the group.
+\item[Q5] Again, the 8 answers is due to one of the participants both agreeing and disagreeing with the statement. However, this is clearly an issue in the industry. ~86\% of the participants in our survey claim to have problem in finding the information and support they need. The remaining percentile said when asked, that he had not been that involved with integration that he had to find any information that wasn't already available within the group.
 \end{description}
 
 These results provides us with possible answers to both research question 2 and 2.1 on all points except the issue with migration of previously integrated systems.
@@ -412,7 +410,7 @@ From the survey we also found some additional issues concerning ESB integration 
 \subsection{Solutions}
 
 \begin{description}
-\item[RQ2.1] The provided, possible solutions to the encountered issues:
+\item[RQ2.1] The provided, possible solutions to the encountered issues, these solutions have all come from the results in the sampling. None of the results have been tested, other than in the everyday development of the software integration project in which all the participants have been involved:
 \begin{description}
 
 \item[ISSUE1.1] In real world implementation, it is important to set rules of communication. As can be seen in the answers to question 2.2 in appendix a, a firm rule of how communication needs to be applied when beginning ESB implementation. 
