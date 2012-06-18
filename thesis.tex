@@ -29,8 +29,9 @@
 \includepdf{thesis-main.pdf}
 
 \begin{abstract}
-This bachelor thesis looks into the use Enterprise Service Bus(ESB) an the central hub in system integration. The thesis will focus on issues with ESB integration and solutions to these problems, as the positive aspects have been covered in other reports. 
-The thesis will contribute with a set of guidelines to help new ESB developers get started without the most recurring issues. These guidelines will be formed by answers from a questionnaire that is in turn formed by a literature review, designed to find issues with ESB integration.
+This bachelor thesis looks into the use Enterprise Service Bus(ESB) as the central hub in system integration, which is currently the newest standard for large-scale system integration. The thesis is focused on issues with ESB integration and solutions to these problems, as the positive aspects have already been covered in other reports.
+There has been no real 
+ These guidelines was formed by answers from a questionnaire that is in turn formed by a literature review, designed to find issues with ESB integration.
 We can conclude that a project that is well informed can avoid a whole lot of the the initial issues with some planning, if they follow the guidelines listed at the end of this thesis.
 
 \keywords{ESB, Enterprise Service Bus, ESB issues, Service Bus problems}
@@ -175,11 +176,6 @@ Using a architecture hierarchy will result in improved system scalability, allow
 \subsubsection{Code-on-Demand}
 This is an optional constraint. This allows the server to provide finished code that contains general functionality to be used in client. Allowing the server to change part of the client code. The code can be in a form of JavaScript or Java applets.
 
-\subsection{Student project}
-We are currently involved in a student project together with 10 other student that works together with a dominating, European telecom company in . The goal of this project is to integrate several of the companys existing products to create a totaly new system. There is a lot of things that we are not allowed to mention about this project but the technique of choice for integration is not secret, we are using an ESB solution from Mulesoft\cite{mule}. The experiences of the participants in this project is worth a lot. Partially because everyone has recently been involved in starting integration with an ESB and have the problems fresh in their memory ant partially because we, thanks to the companies position in the software development area, was able to get in personal contact with Mulesoft for guidance on how to progress with our development. During this guidance, we also got confirmation directly from Mulsesoft that there is known problems with the available documentation.
-
-
-
 \section{Research questions and research design}
 In this section we will present our research questions and also how we plan to find answers to these questions. We will provide the details on how we will collect published articles and how this will lead to the forming of a questionnaire to be used in further information gathering.
 \subsubsection{Research Questions}
@@ -246,7 +242,6 @@ We thought that we would find more issues in this field and there is a slight po
 
 \subsection{Interview survey design}
 
-We have conducted interviews with participants in our development team that are currently in the process of implementing an ESB with the help of a survey and also with developers from the large, international telecom company we are currently working on. The participants from the telecom company are software developers who have been spending many years with system integration, they are valuable because we need information from people who have solved a lot of different integration problems. Not only with ESB integration but also general integration issues. The other participants in our survey will come from our student project. As mentioned in section 2.9, the participants have recently been introduced to many different difficulties with ESB integration. They also have first hand information from Mulesoft guidance.
 The survey is created from the result of the literature review and is designed to accomplish two things.
 \begin{enumerate}
 \item Confirm that the known issues from the literature review is also present in the projects we are involved in. If this is not the case, show how the particular issue has been handled.
@@ -298,12 +293,16 @@ The survey will contain the following questions:
 
 \end{itemize}
 
+These questiones was chosen to map the results in the literature review results.
+
 
 \section{Data collecting results}
 In this section we will present the results we got from the sampling that we performed.
 \subsection{Survey setup}
 
-Our survey where filled out by seven individuals, all in some way connected to our current project at a leading, international telecom company. We chose participants based on their previous knowledge of system integration. Both with ESB and other techniques. Four of the participants are in our group and are currently working actively with integration using an ESB from Mulesoft, their value is explained in more detail in section 2.9. The other three are employees at the telecom company, which we have got in contact with while performing our project at the telecom company, the value of their answers is, as mentioned before, a lot of integration experience, both with ESB and other architectures, providing specific and generic knowledge.
+We were involved in a student project together with 10 other students that worked together with a dominating, European telecom company in Karlskrona. The goal of this project was to integrate several of the companys existing products to create a totaly new system. We were using an ESB solution from Mulesoft\cite{mule}. The experiences of the participants in this project was worth a lot. Partially because everyone hd recently been involved in starting integration with an ESB and had the problems fresh in their memory ant partially because we, thanks to the companies position in the software development area, were able to get in personal contact with Mulesoft for guidance on how to progress with our development. During this guidance, we also got confirmation directly from Mulsesoft that there is known problems with the available documentation.
+
+Our survey was filled out by seven individuals, all in some way connected to our current project. We chose participants based on their previous knowledge of system integration. Both with ESB and other techniques. Four of the participants are in our group and are currently working actively with integration using an ESB from Mulesoft, their value is explained in more detail in section 2.9. The other three are employees at the telecom company, which we have got in contact with while performing our project at the telecom company, the value of their answers is, as mentioned before, a lot of integration experience, both with ESB and other architectures, providing specific and generic knowledge.
 The surveys was conducted by handing the participant a printed survey with our previously stated questions  in section \ref{survey}. After this, the person had all the time he or she needed to fill in their answers.
 All the participants had one of us present at all time in case something was unclear, badly formulated or in case they just wanted to say something that was not covered by the survey. The survey where done anonymously by all participants. Their roles and experience where recorded during the interviews. The participants roles and experience can be found in Appendix A.
 
@@ -370,7 +369,7 @@ Q5 & Are you able to get support or find information to resolve the issues that 
 \end{tabular}
 
 \begin{description}
-\item[Q5] This is clearly an issue in the industry. ~86\% of the participants in our survey claim to have problem in finding the information and support they need. The remaining percentile said when asked, that he had not been that involved with integration that he had to find any information that wasn't already available within the group.
+\item[Q5] Again, the 8 answers is due to one of the participants both agreeing and disagreeing with the statement. However, this is clearly an issue in the industry. ~86\% of the participants in our survey claim to have problem in finding the information and support they need. The remaining percentile said when asked, that he had not been that involved with integration that he had to find any information that wasn't already available within the group.
 \end{description}
 
 These results provides us with possible answers to both research question 2 and 2.1 on all points except the issue with migration of previously integrated systems.
@@ -438,7 +437,7 @@ ISSUE2.6 & To get proper documentation, a enterprise license might be needed. Th
 \subsection{Solutions}
 
 \begin{description}
-\item[RQ2.1] The provided, possible solutions to the encountered issues:
+\item[RQ2.1] The provided, possible solutions to the encountered issues, these solutions have all come from the results in the sampling. None of the results have been tested, other than in the everyday development of the software integration project in which all the participants have been involved:
 \begin{description}
 
 \item[ISSUE1.1] In real world implementation, it is important to set rules of communication. As can be seen in the answers to question 2.2 in appendix a, a firm rule of how communication needs to be applied when beginning ESB implementation. 
@@ -463,7 +462,7 @@ So the goal with this report was to find beginner problems with ESB integration 
 The issues that were not provided with a solution, at least comes with directions as how to handle. Providing this document should be enough to let a project planner make an informed decision on how to tackle ESB implementation. It provides information on what to consider when thinking about licenses and also information on how to handle flows within the system.
 
 So are our methods comprehensive enough to give the result legitimacy? Compared to previously published work that has not given much focus on how to actually handle issues, this thesis is more focused on helping new practitioners to avoid the most common problems.
-We mentioned our literature survey results and concluded that we where confident with the amount of information we were able to get from this actually was the most important parts. We think that, given the answers from our sampling, it is confirmed that the issues we found are also the issues that is encountered by practitioners.
+We mentioned our literature survey results and concluded that we where confident with the amount of information we were able to get from this actually was the most important parts. Given the answers from our sampling, it is confirmed that the issues we found are also the issues that is encountered by practitioners.
 The number of performed interviews may be a little low, but we believe it still gave us the answers we needed. Since some of the participants have worked 6 months or less with ESB integration, we get the views of persons that has very recently been through all the problems with adapting to a new way of working. Furthermore, since these participants have been in direct contact with Mulesoft, they have been able to provide information that most developers will not be able to obtain. And with the more experienced integrationers from a leading European telecom company we got some insight from people who has more experience with various kinds of integration and because of this is able to provide more comparative information.
 
 Previously available information fails to give a concluded image on ESB integration and issue handling, with this thesis all the pieces should be incorporated so that an informed plan can be established (see guidelines below).
