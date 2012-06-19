@@ -31,7 +31,7 @@
 \begin{abstract}
 This bachelor thesis looks into the use Enterprise Service Bus(ESB) as the central hub in system integration, which is currently the newest standard for large-scale system integration. The thesis is focused on issues with ESB integration and solutions to these problems, as the positive aspects have already been covered in other reports.
 There is not much available information about the issues that can occur when using a ESB architecture and how to resolve thes issues. 
-The contribution of this thesis is gathering known issues from both academic papers and from the industry and providing solutions to these issues. Also, we present a set of guidelines for developers that are new to ESB. These guidelines was formed by answers from a questionnaire that is in turn formed by a literature review, designed to find issues with ESB integration.
+The contribution of this thesis is gathering known issues from both academic papers and from the industry and providing solutions to these issues.
 The solutions we found can be used by new ESB developers to avoid common mistakes and also might also assist by providing a solution in case an issue already har occurred.
 
 \keywords{ESB, Enterprise Service Bus, ESB issues, Service Bus problems}
@@ -179,7 +179,7 @@ This is an optional constraint. This allows the server to provide finished code 
 \section{Research questions and research design}
 In this section we will present our research questions and also how we plan to find answers to these questions. We will provide the details on how we will collect published articles and how this will lead to the forming of a questionnaire to be used in further information gathering.
 \subsubsection{Research Questions}
-We want to find as many ESB integration obstacles as possible and then provide solutions to these. Our aim with this is to produce guidelines for developers who is to begin with ESB integration to help them avoid unnecessary cost and timeloss.
+We want to find as many ESB integration obstacles as possible and then provide solutions to these. Our aim with this is to produce one single document for developers who is to begin with ESB integration to help them avoid unnecessary cost and timeloss.
 \begin{description}
 \item[RQ1] What disadvantages are mentioned of ESB solutions and in what context in the literature?
 \item[RQ2] What disadvantages are experienced by the practitioners?
@@ -466,19 +466,9 @@ So are our methods comprehensive enough to give the result legitimacy? Compared 
 Given the answers from our sampling, it is confirmed that the issues we found are also the issues that is encountered by practitioners.
 The number of performed interviews may be a little low, but we believe it still gave us the answers we needed. Since some of the participants have worked 6 months or less with ESB integration, we get the views of persons that has very recently been through all the problems with adapting to a new way of working. Furthermore, since these participants have been in direct contact with Mulesoft, they have been able to provide information that most developers will not be able to obtain. And with the more experienced integrationers from a leading European telecom company we got some insight from people who has more experience with various kinds of integration and because of this is able to provide more comparative information.
 
-Previously available information (se references) fails to give a concluded image on ESB integration and issue handling, with this thesis all the necessary pieces should be incorporated so that an informed plan can be established (see guidelines below).
+Previously available information (se references) fails to give a concluded image on ESB integration and issue handling, with this thesis all the necessary pieces should be incorporated so that an informed plan can be established.
 
 If we would be to start over on this thesis, the main thing that we would change is that we would try to get a larger number of experienced practitioners as this would have increased the chance of getting tips on dealing with migration of older integrated systems. We would also have tried to perform some test of our own, to see if we could find problems with response times and such.
-
-\section{Guidelines for new ESB developers}
-\begin{itemize}
-\item Begin planning early and set up firm rules for information flow
-\item If there is no previous experience with ESB integration in the project, start education prior to project start
-\item Make sure you know what version of the chosen ESB solution you are going to use, so you know what information you can use
-\item If many nodes use separate session id, store these in the ESB to make sure it can stay connected with all nodes
-\item As a lot of ESB implementation is done in XML, it might be a good idea to look into XML editors with a GUI to make it easier to get an overview
-\item If you feel you are going to need a lot of support, get an enterprise license
-\end{itemize}
 
 \newpage
 \bibliographystyle{plain}
