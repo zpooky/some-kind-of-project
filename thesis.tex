@@ -382,10 +382,13 @@ From the survey we also found some additional issues concerning ESB integration 
 
 \subsection{Issues}
 The provided solutions have not been put to any tests. They have all been provided from the performed sampling. A sampling that was answered by people that have experience with ESB integration. Both from a rookie perspective and the views of experienced developers. None of the solutions is guaranteed to work for everyone, but have been proved to work for active developers in a real project. Hence it should be possible to incorporate these solutions in other projects.
+
 {
 \setlength{\tabcolsep}{1ex}
 \renewcommand{\arraystretch}{1.5}
-\begin{tabular}{| l | p{4cm} | p{6cm} | l | l |}
+\begin{table}
+\caption{This is the caption}
+\begin{tabular}{| l | p{4cm} | p{6cm} | p{2cm} | p{2cm} |}
 \hline
 Nr & Issue & Solution & Issue found in & Solution found in \\ \hline
 1.1 & It is hard to decide where all functionality goes. Some things could be placed in the ESB but might as well be in one of the nodes in the system. & In real world implementation, it is important to set rules of communication. As can be seen in the answers to question 2.2 in appendix a, a firm rule of how communication needs to be applied when beginning ESB implementation.  & Literature & Sampling \\ \hline
@@ -393,25 +396,27 @@ Nr & Issue & Solution & Issue found in & Solution found in \\ \hline
 1.3  & Migration of systems integrated with older architectures can be hard to do. & This issue can’t be either confirmed or dismissed. as we could not find any participant that had enough experience in integration to give any directions on the matter. & Literature & Not found \\ \hline
 1.4  & Support is sometimes limited and documentation and community answers is not always available without a lot of effort. & This is absolutely confirmed and a solution is not easy to give. The survey-takers that are involved in our project are quite privileged. Since they are involved in a project tied to a leading telecom company (a company that have a huge influence on the industry, they got an easy access to first class assistance from the developers of the Mule ESB. Otherwise it is confirmed that support and community response is hard to get by and since our survey-takers have been privileged enough, we can confirm that support is an area where vast improvements are needed.  & Literature & Sampling \\ \hline
 \end{tabular}
+\end{table}
 }
 
 {
+
 \setlength{\tabcolsep}{1ex}
 \renewcommand{\arraystretch}{1.5}
-\begin{tabular}{ | l | p{4cm} | p{6cm} | l | l |}
+\begin{table}
+\caption{This is the caption}
+\begin{tabular}{ | l | p{4cm} | p{6cm} | p{2cm} | p{2cm} |}
 \hline
 Nr & Issue & Solution & Issue found in & Solution found in \\ \hline
-ISSUE2.1 & If the team developing the ESB falls behind, this affects all teams that utilize the ESB. & No solution is provided. Hower, we believe that this issue can be handled by the fact that you know that it exists. If a project is to be started and the project manager knows about the issues that may occur, education can be started at an early stage, preventing slow progress on implementation & Sampling & Sampling \\ \hline
-ISSUE2.2 & Big changes between different versions of the ESB makes it hard when documentation isn't up to date. & This, as far as we have found out, had been handled by trial and error. Unfortunately this is the best answer to this issue at the moment. A more stable solution is to choose a version of an ESB and stick to it, ignoring possible improvements in order to keep the functionality already implemented. & Sampling & Sampling \\ \hline
-ISSUE2.3 & There is no stated standard, or best practice, when it comes to ESB implementation. & This is still an issue and will keep on being an issue. Until the different providers of ESB solutions sit down and decide on a common standard for a minimum of functionality, there is no way of deciding on what needs to be there to be able to say that you’ve got an ESB integrated system. & Sampling & Not found \\ \hline
-ISSUE2.4 & Problems when different nodes use different sessions. The ESB is usually stateless, meaning that it has no session id, this can be a problem if some nodes need their own sessions.  & This is an issue that can quite easily be handled. Several different session ids can be stored in the ESB in order to keep connection with all the nodes. Another solution is to make the ESB perform a login and logout on each node, every time  a request is made. & Sampling & Sampling \\ \hline
-ISSUE2.5 & A lot of the ESB coding is done in XML which is not a proper programming language and this makes it hard to get a good overview of the code. & There are some xml editors with a GUI editor. These are not free from bugs, but combined with other tools they can provide an easier overview in the development process. & Sampling & Sampling \\ \hline
-ISSUE2.6 & To get proper documentation, a enterprise license might be needed. This is expensive and might raise the projects budget. & This can be addressed in two ways. 1. Hope for the best. Meaning that the development relies on community and available documentation, with no additional economical cost for the project. 2. Purchase of enterprise license. Meaning a economical cost, but guarantees more documentation and support in the process. The first alternative would be advised for teams with experience of the platform and vice versa. & Sampling & Sampling \\ \hline
+2.1 & If the team developing the ESB falls behind, this affects all teams that utilize the ESB. & No solution is provided. Hower, we believe that this issue can be handled by the fact that you know that it exists. If a project is to be started and the project manager knows about the issues that may occur, education can be started at an early stage, preventing slow progress on implementation & Sampling & Sampling \\ \hline
+2.2 & Big changes between different versions of the ESB makes it hard when documentation isn't up to date. & This, as far as we have found out, had been handled by trial and error. Unfortunately this is the best answer to this issue at the moment. A more stable solution is to choose a version of an ESB and stick to it, ignoring possible improvements in order to keep the functionality already implemented. & Sampling & Sampling \\ \hline
+2.3 & There is no stated standard, or best practice, when it comes to ESB implementation. & This is still an issue and will keep on being an issue. Until the different providers of ESB solutions sit down and decide on a common standard for a minimum of functionality, there is no way of deciding on what needs to be there to be able to say that you’ve got an ESB integrated system. & Sampling & Not found \\ \hline
+2.4 & Problems when different nodes use different sessions. The ESB is usually stateless, meaning that it has no session id, this can be a problem if some nodes need their own sessions.  & This is an issue that can quite easily be handled. Several different session ids can be stored in the ESB in order to keep connection with all the nodes. Another solution is to make the ESB perform a login and logout on each node, every time  a request is made. & Sampling & Sampling \\ \hline
+2.5 & A lot of the ESB coding is done in XML which is not a proper programming language and this makes it hard to get a good overview of the code. & There are some xml editors with a GUI editor. These are not free from bugs, but combined with other tools they can provide an easier overview in the development process. & Sampling & Sampling \\ \hline
+2.6 & To get proper documentation, a enterprise license might be needed. This is expensive and might raise the projects budget. & This can be addressed in two ways. 1. Hope for the best. Meaning that the development relies on community and available documentation, with no additional economical cost for the project. 2. Purchase of enterprise license. Meaning a economical cost, but guarantees more documentation and support in the process. The first alternative would be advised for teams with experience of the platform and vice versa. & Sampling & Sampling \\ \hline
 \end{tabular}
+\end{table}
 }
-
-
-
 
 \begin{description}
 
